@@ -1,0 +1,180 @@
+// bilim DB 스키마
+// 로컬은 SQLite, 배포는 Postgres(Supabase 등)로 옮길 수 있게
+// SQLite에 없는 타입(enum, Json)은 쓰지 않고 문자열로 저장한다.
+// 허용 값은 src/lib/constants.ts 에 정의돼 있다.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+/// 대여 제품
+model Product {
+  id           Int      @id @default(autoincrement())
+  slug         String   @unique
+  category     String // fridge | washer | microwave | aircon | tv | vacuum | ricecooker
+  brand        String // 글자로만 표시 (로고 이미지 사용 안 함)
+  nameKo       String
+  nameEn       String
+  nameZh       String
+  grade        String // NEW | A | B | C
+  monthlyPrice Int // 월 렌탈료(원)
+  deposit      Int      @default(0) // 보증금(원)
+  installFee   Int      @default(0) // 설치비(원)
+  minMonths    Int      @default(3) // 최소 이용 기간(개월)
+  inspection   String   @default("") // 통과한 점검 항목 키를 쉼표로 연결
+  imageUrl     String?
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  packageItems     PackageItem[]
+  applicationItems ApplicationItem[]
+}
+
+/// 패키지 렌탈
+model Package {
+  id           Int      @id @default(autoincrement())
+  slug         String   @unique
+  nameKo       String
+  nameEn       String
+  nameZh       String
+  descKo       String   @default("")
+  descEn       String   @default("")
+  descZh       String   @default("")
+  monthlyPrice Int // 패키지 월 렌탈료(원)
+  minMonths    Int      @default(6)
+  sortOrder    Int      @default(0)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  items            PackageItem[]
+  applicationItems ApplicationItem[]
+}
+
+model PackageItem {
+  id        Int     @id @default(autoincrement())
+  packageId Int
+  productId Int
+  package   Package @relation(fields: [packageId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([packageId, productId])
+}
+
+/// 상담 신청 (대여/팔기)
+model Application {
+  id            Int      @id @default(autoincrement())
+  code          String   @unique // 신청번호 예: BL-R-261116-4F7K
+  type          String // RENT | SELL
+  status        String   @default("RECEIVED") // RECEIVED | CONSULTING | SCHEDULED | DELIVERED | ACTIVE | SETTLED | CANCELED
+  locale        String   @default("ko") // 신청 당시 화면 언어
+  // 주소
+  postcode      String
+  address       String
+  addressDetail String
+  buildingType  String // oneroom | officetel | dormitory | apartment | villa | other
+  // 일정
+  preferredDate String // YYYY-MM-DD
+  timeSlot      String // morning | afternoon | evening
+  rentMonths    Int? // 대여만
+  // 연락처
+  name          String
+  phone         String // 숫자만 저장 (조회용)
+  email         String
+  contactMethod String // kakao | wechat | whatsapp | email
+  contactId     String   @default("")
+  nationality   String
+  language      String // ko | en | zh | other
+  note          String   @default("")
+  consentAt     DateTime
+  // 팔기 전용
+  sellBrandModel   String?
+  sellPurchaseYear Int?
+  sellCondition    String? // good | fair | poor
+  departureDate    String? // YYYY-MM-DD
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  items      ApplicationItem[]
+  photos     ApplicationPhoto[]
+  statusLogs StatusLog[]
+  messages   Message[]
+
+  @@index([type, status])
+  @@index([createdAt])
+}
+
+/// 신청에서 고른 제품·패키지(대여) 또는 팔 가전 종류(팔기)
+model ApplicationItem {
+  id            Int         @id @default(autoincrement())
+  applicationId Int
+  kind          String // PRODUCT | PACKAGE | CATEGORY
+  productId     Int?
+  packageId     Int?
+  category      String? // kind=CATEGORY 일 때
+  label         String // 신청 당시 이름 (제품이 나중에 삭제돼도 남는다)
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  product       Product?    @relation(fields: [productId], references: [id], onDelete: SetNull)
+  package       Package?    @relation(fields: [packageId], references: [id], onDelete: SetNull)
+}
+
+model ApplicationPhoto {
+  id            Int         @id @default(autoincrement())
+  applicationId Int
+  url           String
+  createdAt     DateTime    @default(now())
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+}
+
+/// 상태 변경 이력 (타임라인)
+model StatusLog {
+  id            Int         @id @default(autoincrement())
+  applicationId Int
+  status        String
+  createdAt     DateTime    @default(now())
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+}
+
+/// 사이트 안 메시지 (관리자 <-> 고객)
+model Message {
+  id            Int         @id @default(autoincrement())
+  applicationId Int
+  sender        String // ADMIN | CUSTOMER
+  body          String
+  readAt        DateTime? // 받는 쪽이 읽은 시각
+  createdAt     DateTime    @default(now())
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+
+  @@index([applicationId, createdAt])
+}
+
+/// Q&A 게시판
+model QnaPost {
+  id           Int       @id @default(autoincrement())
+  title        String
+  body         String
+  authorName   String
+  isPrivate    Boolean   @default(false)
+  passwordHash String // 글 확인·삭제용 비밀번호(해시)
+  locale       String    @default("ko")
+  answer       String?
+  answeredAt   DateTime?
+  createdAt    DateTime  @default(now())
+}
+
+/// 1:1 문의 (떠 있는 상담 버튼)
+model Inquiry {
+  id        Int      @id @default(autoincrement())
+  name      String
+  contact   String // 이메일 또는 메신저 ID
+  body      String
+  locale    String   @default("ko")
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

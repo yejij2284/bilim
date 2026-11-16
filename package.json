@@ -1,0 +1,45 @@
+{
+  "name": "bilim",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:setup": "prisma db push && tsx prisma/seed.ts",
+    "postinstall": "prisma generate",
+    "manage": "tsx scripts/manage.ts",
+    "db:remote": "tsx scripts/push-remote.ts"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^7.0.6",
+    "@libsql/client": "^0.18.0",
+    "@prisma/adapter-libsql": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "@vercel/blob": "^2.9.0",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.10",
+    "next": "16.4.6",
+    "next-intl": "^4.15.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-hook-form": "^7.92.0",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "prisma": "^7.10.1",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

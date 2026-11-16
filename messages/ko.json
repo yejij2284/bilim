@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "title": "bilim | 외국인을 위한 가전 렌탈",
+    "description": "한국에 사는 외국인을 위한 가전 순환 렌탈. 사지 말고 빌리세요."
+  },
+  "common": {
+    "brand": "bilim",
+    "skipToContent": "본문으로 건너뛰기",
+    "perMonth": "월",
+    "won": "원",
+    "comingSoon": "준비 중인 페이지입니다",
+    "comingSoonBody": "곧 만나요. 이 페이지는 다음 단계에서 완성됩니다.",
+    "backHome": "홈으로",
+    "placeholderNotice": "내용은 준비 중입니다."
+  },
+  "nav": {
+    "about": "서비스 소개",
+    "rent": "대여",
+    "sell": "팔기",
+    "support": "고객센터",
+    "my": "내 신청",
+    "apply": "신청하기",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "main": "주 메뉴",
+    "language": "언어"
+  },
+  "localeNames": {
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "외국인을 위한 가전 렌탈",
+      "title": "Don't buy. Just bilim.",
+      "body": "한국에 머무는 동안 필요한 가전, 사지 말고 빌리세요. 떠날 때는 쓰던 가전을 bilim이 사 갑니다.",
+      "rent": "가전 빌리기",
+      "sell": "가전 팔기"
+    },
+    "steps": {
+      "eyebrow": "이용 방법",
+      "title": "가전이 돌고 도는 세 단계",
+      "items": {
+        "source": {
+          "title": "가전 확보",
+          "body": "제조사에서 신품을 사고, 출국하는 분들의 가전을 매입해 무료로 수거합니다."
+        },
+        "refurbish": {
+          "title": "세척·점검·등급",
+          "body": "전문 수리업체가 세척하고 점검한 뒤 품질 등급을 매깁니다."
+        },
+        "rent": {
+          "title": "렌탈",
+          "body": "등급에 맞는 월 구독료로 집까지 배송하고 설치해 드립니다."
+        }
+      }
+    },
+    "benefits": {
+      "eyebrow": "bilim을 쓰는 이유",
+      "title": "한국 생활의 시작을 가볍게",
+      "items": {
+        "subscription": {
+          "title": "목돈 없이 월 구독",
+          "body": "큰돈 들여 사지 않아도 됩니다. 쓰는 기간만큼만 매달 내세요."
+        },
+        "pickup": {
+          "title": "무료 수거",
+          "body": "가전을 팔 때도, 렌탈이 끝날 때도 bilim이 직접 가지러 갑니다."
+        },
+        "multilingual": {
+          "title": "다국어 상담",
+          "body": "한국어, 영어, 중국어로 상담합니다. 편한 메신저로 연락드려요."
+        }
+      }
+    },
+    "packages": {
+      "eyebrow": "패키지 렌탈",
+      "title": "많이 빌릴수록 더 싸게",
+      "body": "자주 함께 빌리는 가전을 묶었습니다.",
+      "cta": "패키지 보기"
+    },
+    "ad": {
+      "label": "광고",
+      "title": "광고 문의",
+      "body": "한국에 사는 외국인에게 서비스를 알리고 싶다면 이 자리에 광고를 실을 수 있습니다."
+    },
+    "closing": {
+      "title": "지금 필요한 가전을 알려 주세요",
+      "body": "신청을 남기면 순서대로 연락드립니다.",
+      "cta": "상담 신청하기"
+    }
+  },
+  "categories": {
+    "fridge": "냉장고",
+    "washer": "세탁기",
+    "microwave": "전자레인지",
+    "aircon": "에어컨",
+    "tv": "TV",
+    "vacuum": "청소기",
+    "ricecooker": "밥솥"
+  },
+  "grades": {
+    "label": "등급",
+    "badgeHint": "{grade} 등급 설명 보기",
+    "badge": "{name}등급",
+    "tableTitle": "등급 기준표",
+    "colGrade": "등급",
+    "colMeaning": "의미",
+    "colPrice": "렌탈가",
+    "NEW": { "name": "신품", "meaning": "새 제품", "price": "가장 높음" },
+    "A": { "name": "A", "meaning": "거의 새것, 사용감 거의 없음", "price": "높음" },
+    "B": { "name": "B", "meaning": "약간의 사용감, 기능 완벽", "price": "중간" },
+    "C": { "name": "C", "meaning": "외관에 사용감, 기능 정상", "price": "가장 저렴" }
+  },
+  "inspection": {
+    "cleaning": "내부·외부 세척과 살균",
+    "power": "전원·전기 안전 점검",
+    "function": "주요 기능 작동 시험",
+    "safety": "누수·과열 등 안전 확인",
+    "exterior": "외관 상태 확인과 등급 판정",
+    "parts": "소모품·부품 교체"
+  },
+  "rent": {
+    "title": "가전 대여",
+    "intro": "필요한 가전을 골라 보세요. 등급에 따라 월 렌탈료가 달라집니다.",
+    "filters": {
+      "title": "필터",
+      "category": "종류",
+      "grade": "등급",
+      "price": "월 렌탈료",
+      "all": "전체",
+      "priceUnder": "{price} 이하",
+      "reset": "필터 초기화"
+    },
+    "count": "제품 {count}개",
+    "empty": "조건에 맞는 제품이 없습니다. 필터를 바꿔 보세요.",
+    "minMonths": "최소 {months}개월",
+    "monthly": "월 {price}",
+    "photoPlaceholder": "사진 준비 중",
+    "viewDetail": "{name} 자세히 보기",
+    "priceNotice": "표시된 가격은 예시이며 실제 가격과 다를 수 있습니다."
+  },
+  "product": {
+    "back": "대여 목록으로",
+    "monthlyFee": "월 렌탈료",
+    "gradeTitle": "등급 설명",
+    "inspectionTitle": "점검 내역",
+    "inspectionIntro": "이 제품은 아래 항목을 모두 통과했습니다.",
+    "termsTitle": "이용 조건",
+    "deposit": "보증금",
+    "installFee": "설치비",
+    "minPeriod": "최소 이용 기간",
+    "months": "{months}개월",
+    "free": "무료",
+    "depositNote": "보증금은 렌탈이 끝나면 돌려드립니다.",
+    "apply": "이 제품으로 신청",
+    "notFound": "제품을 찾을 수 없습니다."
+  },
+  "packages": {
+    "title": "패키지 렌탈",
+    "slogan": "많이 빌릴수록 더 싸게",
+    "intro": "자주 함께 빌리는 가전을 묶어 낱개보다 저렴하게 빌려 드립니다.",
+    "includes": "구성",
+    "separately": "낱개로 빌리면",
+    "packagePrice": "패키지 가격",
+    "save": "월 {amount} 절약 ({percent}% 할인)",
+    "minMonths": "최소 {months}개월",
+    "apply": "이 패키지로 신청"
+  },
+  "sell": {
+    "title": "가전 팔기",
+    "headline": "깨끗하게 사서 처리해 드려요",
+    "intro": "한국을 떠나거나 가전을 정리해야 할 때, bilim이 사 갑니다. 수거는 무료입니다.",
+    "applyCta": "매입 신청하기",
+    "points": {
+      "pickup": { "title": "무료 수거", "body": "원하는 날짜에 집으로 방문해 직접 가져갑니다." },
+      "fast": { "title": "간단한 절차", "body": "사진 몇 장과 기본 정보만 보내면 됩니다." },
+      "circular": { "title": "다음 사람에게", "body": "세척과 점검을 거쳐 새로 입국한 유학생이 다시 씁니다." }
+    },
+    "estimator": {
+      "title": "예상 매입가 알아보기",
+      "body": "종류, 구매 연도, 상태를 고르면 대략적인 금액 범위를 알려드립니다.",
+      "category": "종류",
+      "year": "구매 연도",
+      "condition": "상태",
+      "conditions": {
+        "good": "좋음: 사용감이 거의 없음",
+        "fair": "보통: 사용감은 있지만 기능 정상",
+        "poor": "나쁨: 흠집이 많거나 일부 기능 이상"
+      },
+      "result": "예상 매입가",
+      "range": "{min} ~ {max}",
+      "notBuyable": "이 조건은 매입이 어려울 수 있습니다. 그래도 무료 수거가 가능한지 상담해 드립니다.",
+      "disclaimer": "예시 계산식에 따른 참고 금액입니다. 실제 매입가는 점검 후 확정됩니다.",
+      "applyWith": "이 조건으로 매입 신청"
+    }
+  },
+  "about": {
+    "title": "서비스 소개",
+    "intro": "bilim은 한국에 사는 외국인을 위한 가전 순환 렌탈 플랫폼입니다. 떠나는 사람의 가전이 새로 오는 사람에게 이어집니다.",
+    "cycle": {
+      "title": "bilim의 순환 구조",
+      "caption": "가전은 공급처에서 bilim을 거쳐 렌탈 고객에게 가고, 수리업체가 품질을 지킵니다.",
+      "suppliers": "가전 공급 업체",
+      "suppliersSub": "Samsung · LG · Xiaomi",
+      "leavers": "가전 처분 희망자",
+      "leaversSub": "출국하는 외국인",
+      "bilim": "bilim",
+      "bilimSub": "매입 · 등급 · 렌탈",
+      "customers": "렌탈 고객",
+      "customersSub": "입국한 외국인 유학생",
+      "repair": "수리업체",
+      "repairSub": "세척 · 점검 · 수리",
+      "flowNew": "신품 가전",
+      "flowUsed": "중고 가전 · 무료 수거",
+      "flowRent": "가전 대여 · 설치",
+      "flowRepair": "고장 가전 ⇄ 수리 완료"
+    },
+    "services": {
+      "title": "bilim이 하는 일",
+      "pickup": { "title": "수거 서비스", "body": "가전을 팔 때도, 렌탈이 끝날 때도 무료로 수거합니다. 출국 일정에 맞춰 방문합니다." },
+      "grade": { "title": "등급별 렌탈가", "body": "모든 가전에 품질 등급을 매기고, 등급에 따라 렌탈가를 다르게 정합니다. 예산에 맞게 고르세요." },
+      "multilingual": { "title": "다국어 지원", "body": "사이트와 상담 모두 한국어, 영어, 중국어로 이용할 수 있습니다." },
+      "repair": { "title": "수리·점검", "body": "매입한 가전은 전문 수리업체에서 세척, 점검, 수리를 거칩니다. 이용 중 고장도 접수해 주세요." }
+    },
+    "process": {
+      "title": "수리·점검 과정"
+    }
+  },
+  "apply": {
+    "title": "상담 신청",
+    "intro": "여섯 단계만 채우면 됩니다. 신청을 남기면 순서대로 연락드립니다.",
+    "stepOf": "{current} / {total} 단계",
+    "steps": {
+      "1": "서비스 종류",
+      "2": "제품 선택",
+      "3": "주소",
+      "4": "희망 일정",
+      "5": "연락처",
+      "6": "확인"
+    },
+    "next": "다음",
+    "prev": "이전",
+    "submit": "상담 신청",
+    "submitting": "보내는 중...",
+    "optional": "선택",
+    "type": {
+      "legend": "어떤 서비스를 원하세요?",
+      "RENT": "대여",
+      "RENTDesc": "필요한 가전을 월 구독으로 빌립니다.",
+      "SELL": "팔기",
+      "SELLDesc": "쓰던 가전을 bilim에 팝니다. 수거는 무료입니다."
+    },
+    "items": {
+      "rentLegend": "빌리고 싶은 제품이나 패키지를 골라 주세요. 여러 개를 고를 수 있습니다.",
+      "packages": "패키지",
+      "products": "제품",
+      "selected": "{count}개 선택됨",
+      "sellLegend": "팔고 싶은 가전 종류를 골라 주세요. 여러 개를 고를 수 있습니다.",
+      "brandModel": "브랜드 / 모델",
+      "brandModelHint": "예: Samsung RT25. 여러 개면 쉼표로 나눠 적어 주세요.",
+      "purchaseYear": "구매 연도",
+      "condition": "상태",
+      "photos": "상태 사진",
+      "photosHint": "최대 {max}장, 한 장에 5MB 이하 (JPG, PNG, WEBP)",
+      "addPhotos": "사진 고르기",
+      "uploading": "올리는 중...",
+      "removePhoto": "사진 {index} 삭제",
+      "photoAlt": "올린 사진 {index}"
+    },
+    "address": {
+      "search": "우편번호 검색",
+      "closeSearch": "검색 닫기",
+      "postcode": "우편번호",
+      "address": "주소",
+      "addressHint": "우편번호 검색을 쓰거나 직접 입력해도 됩니다.",
+      "detail": "상세 주소",
+      "detailHint": "동, 호수 등",
+      "buildingType": "건물 종류",
+      "buildingTypes": {
+        "oneroom": "원룸",
+        "officetel": "오피스텔",
+        "dormitory": "기숙사",
+        "apartment": "아파트",
+        "villa": "빌라·주택",
+        "other": "기타"
+      },
+      "searchFailed": "우편번호 검색을 불러오지 못했습니다. 직접 입력해 주세요."
+    },
+    "schedule": {
+      "dateRent": "배송 희망일",
+      "dateSell": "수거 희망일",
+      "timeSlot": "희망 시간대",
+      "timeSlots": {
+        "morning": "오전 (9시~12시)",
+        "afternoon": "오후 (12시~18시)",
+        "evening": "저녁 (18시~21시)"
+      },
+      "rentMonths": "이용 기간",
+      "months": "{months}개월",
+      "departureDate": "출국 예정일",
+      "notice": "희망 일정은 상담 후 확정됩니다."
+    },
+    "contact": {
+      "name": "이름",
+      "phone": "전화번호",
+      "phoneHint": "내 신청을 조회할 때 이 번호를 씁니다.",
+      "email": "이메일",
+      "method": "선호 연락 수단",
+      "methods": {
+        "kakao": "카카오톡",
+        "wechat": "위챗",
+        "whatsapp": "왓츠앱",
+        "email": "이메일"
+      },
+      "contactId": "메신저 ID",
+      "contactIdHint": "카카오톡, 위챗, 왓츠앱을 골랐다면 ID나 번호를 적어 주세요.",
+      "nationality": "국적",
+      "language": "사용 언어",
+      "languages": {
+        "ko": "한국어",
+        "en": "영어",
+        "zh": "중국어",
+        "other": "기타"
+      },
+      "note": "질문·요청사항"
+    },
+    "review": {
+      "title": "입력 내용을 확인해 주세요",
+      "edit": "수정",
+      "none": "없음",
+      "photosCount": "사진 {count}장",
+      "consent": "상담을 위한 개인정보 수집·이용에 동의합니다.",
+      "consentDetail": "수집 항목: 이름, 전화번호, 이메일, 주소, 메신저 ID, 국적. 상담과 서비스 제공에만 사용합니다.",
+      "privacyLink": "개인정보처리방침 보기"
+    },
+    "errors": {
+      "required": "필수 항목입니다.",
+      "tooLong": "너무 깁니다.",
+      "selectOne": "하나 이상 골라 주세요.",
+      "invalidYear": "연도를 네 자리 숫자로 입력해 주세요.",
+      "tooManyPhotos": "사진은 최대 {max}장까지 올릴 수 있습니다.",
+      "invalidPostcode": "우편번호 다섯 자리를 입력해 주세요.",
+      "pastDate": "오늘 이후의 날짜를 골라 주세요.",
+      "invalidPhone": "전화번호를 확인해 주세요.",
+      "invalidEmail": "이메일 주소를 확인해 주세요.",
+      "consentRequired": "동의해야 신청할 수 있습니다.",
+      "upload": "사진을 올리지 못했습니다. 파일 형식과 크기를 확인해 주세요.",
+      "items": "고른 제품을 찾을 수 없습니다. 다시 골라 주세요.",
+      "server": "신청을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.",
+      "fixStep": "입력 내용을 확인해 주세요."
+    },
+    "done": {
+      "title": "신청이 접수되었습니다",
+      "body": "순서대로 연락드릴게요.",
+      "codeLabel": "신청번호",
+      "codeHint": "신청번호와 전화번호로 진행 상태와 메시지를 확인할 수 있습니다. 신청번호를 꼭 적어 두세요.",
+      "copy": "신청번호 복사",
+      "copied": "복사했습니다",
+      "toMy": "내 신청 보기",
+      "toHome": "홈으로"
+    }
+  },
+  "status": {
+    "RECEIVED": "접수",
+    "CONSULTING": "상담 중",
+    "SCHEDULED": "일정 확정",
+    "DELIVERED_RENT": "배송 완료",
+    "DELIVERED_SELL": "수거 완료",
+    "ACTIVE": "이용 중",
+    "SETTLED": "정산 완료",
+    "CANCELED": "취소됨"
+  },
+  "my": {
+    "title": "내 신청",
+    "lookup": {
+      "intro": "신청번호와 전화번호를 입력하면 진행 상태와 메시지를 볼 수 있습니다. 회원가입은 필요 없습니다.",
+      "code": "신청번호",
+      "codePlaceholder": "BL-R-000000-XXXX",
+      "phone": "전화번호",
+      "phoneHint": "신청할 때 적은 전화번호",
+      "submit": "조회하기",
+      "submitting": "조회 중...",
+      "noApplication": "아직 신청하지 않으셨나요?",
+      "applyLink": "상담 신청하기"
+    },
+    "errors": {
+      "required": "신청번호와 전화번호를 모두 입력해 주세요.",
+      "notFound": "일치하는 신청을 찾지 못했습니다. 신청번호와 전화번호를 확인해 주세요."
+    },
+    "summary": {
+      "code": "신청번호",
+      "type": "서비스",
+      "items": "신청 내용",
+      "schedule": "희망 일정",
+      "address": "주소",
+      "appliedAt": "신청일",
+      "leave": "다른 신청 조회"
+    },
+    "timeline": {
+      "title": "진행 상태",
+      "current": "현재 단계",
+      "done": "완료",
+      "upcoming": "예정",
+      "canceled": "이 신청은 취소되었습니다. 궁금한 점은 메시지나 고객센터로 문의해 주세요."
+    },
+    "messages": {
+      "title": "메시지",
+      "intro": "bilim이 순서대로 여기로 연락드립니다. 답장도 여기서 보낼 수 있습니다.",
+      "empty": "아직 메시지가 없습니다. 담당자가 확인하는 대로 연락드릴게요.",
+      "newBadge": "새 메시지",
+      "unread": "새 메시지 {count}개",
+      "fromBilim": "bilim",
+      "fromMe": "나",
+      "inputLabel": "답장 쓰기",
+      "placeholder": "메시지를 입력하세요",
+      "send": "보내기",
+      "sending": "보내는 중...",
+      "closed": "취소된 신청에는 메시지를 보낼 수 없습니다.",
+      "errors": {
+        "empty": "메시지를 입력해 주세요.",
+        "tooLong": "메시지는 1000자까지 보낼 수 있습니다.",
+        "session": "조회 시간이 지났습니다. 다시 조회해 주세요.",
+        "closed": "취소된 신청에는 메시지를 보낼 수 없습니다.",
+        "network": "보내지 못했습니다. 잠시 후 다시 시도해 주세요."
+      }
+    }
+  },
+  "faq": {
+    "categories": {
+      "rent": "대여",
+      "sell": "팔기",
+      "payment": "결제",
+      "repair": "수리·A/S",
+      "etc": "기타"
+    },
+    "items": {
+      "rent": {
+        "1": { "q": "최소 이용 기간이 있나요?", "a": "제품과 패키지마다 최소 이용 기간이 다릅니다. 각 제품 상세 화면의 이용 조건에서 확인할 수 있습니다." },
+        "2": { "q": "배송과 설치는 얼마나 걸리나요?", "a": "신청하신 희망 일정을 기준으로 상담에서 날짜를 확정합니다. 확정된 일정은 내 신청 화면에서 볼 수 있습니다." },
+        "3": { "q": "이용 중에 해지하거나 연장할 수 있나요?", "a": "내 신청 화면의 메시지나 1:1 문의로 알려 주시면 상담을 통해 안내해 드립니다." }
+      },
+      "sell": {
+        "1": { "q": "어떤 가전을 매입하나요?", "a": "냉장고, 세탁기, 전자레인지, 에어컨, TV, 청소기, 밥솥 등을 매입합니다. 연식이 오래됐거나 고장이 심하면 매입이 어려울 수 있습니다." },
+        "2": { "q": "수거 비용이 드나요?", "a": "아니요. 매입하는 가전의 수거는 무료입니다." },
+        "3": { "q": "매입가는 어떻게 정해지나요?", "a": "종류, 구매 연도, 상태를 기준으로 예상 금액을 안내하고, 실제 금액은 점검 후에 확정합니다." }
+      },
+      "payment": {
+        "1": { "q": "렌탈료는 어떻게 내나요?", "a": "결제 방법은 상담에서 안내해 드립니다." },
+        "2": { "q": "보증금은 언제 돌려받나요?", "a": "렌탈이 끝나고 제품을 수거해 확인한 뒤 돌려드립니다." }
+      },
+      "repair": {
+        "1": { "q": "이용 중에 고장 나면 어떻게 하나요?", "a": "내 신청 화면의 메시지나 1:1 문의로 증상을 알려 주세요. 수리업체 점검 일정을 잡아 드립니다." },
+        "2": { "q": "수리 비용은 누가 내나요?", "a": "정상적으로 쓰다가 생긴 고장인지에 따라 달라집니다. 자세한 기준은 상담에서 안내해 드립니다." }
+      },
+      "etc": {
+        "1": { "q": "어떤 언어로 상담할 수 있나요?", "a": "한국어, 영어, 중국어로 상담합니다. 카카오톡, 위챗, 왓츠앱, 이메일 중 편한 방법을 골라 주세요." },
+        "2": { "q": "서비스 지역은 어디인가요?", "a": "서비스 지역은 준비 중입니다. 신청하시면 주소를 확인해 가능한지 알려 드립니다." }
+      }
+    }
+  },
+  "support": {
+    "title": "고객센터",
+    "intro": "자주 묻는 질문을 먼저 찾아보세요. 답이 없으면 Q&A 게시판이나 1:1 문의를 이용해 주세요.",
+    "faqTitle": "자주 묻는 질문",
+    "qnaTitle": "Q&A 게시판",
+    "qnaIntro": "누구나 질문을 남길 수 있고, bilim이 답변합니다.",
+    "qnaGo": "게시판 보기",
+    "inquiryTitle": "1:1 문의",
+    "inquiryIntro": "화면 오른쪽 아래의 상담 버튼으로 언제든 문의를 남길 수 있습니다.",
+    "qna": {
+      "write": "질문 쓰기",
+      "empty": "아직 질문이 없습니다. 첫 질문을 남겨 보세요.",
+      "answered": "답변 완료",
+      "waiting": "답변 대기",
+      "private": "비공개",
+      "privateTitle": "비공개 글입니다",
+      "back": "목록으로",
+      "question": "질문",
+      "answer": "bilim의 답변",
+      "noAnswer": "아직 답변이 없습니다. 확인하는 대로 답변드릴게요.",
+      "unlockIntro": "글을 쓸 때 정한 비밀번호를 입력하면 내용을 볼 수 있습니다.",
+      "password": "비밀번호",
+      "unlock": "확인",
+      "checking": "확인 중...",
+      "wrongPassword": "비밀번호가 맞지 않습니다.",
+      "form": {
+        "title": "질문 쓰기",
+        "name": "이름(닉네임)",
+        "subject": "제목",
+        "body": "내용",
+        "visibility": "공개 여부",
+        "public": "공개",
+        "publicDesc": "누구나 볼 수 있습니다. 개인정보는 적지 마세요.",
+        "private": "비공개",
+        "privateDesc": "비밀번호를 아는 사람만 볼 수 있습니다.",
+        "password": "비밀번호",
+        "passwordHint": "비공개 글을 다시 볼 때 필요합니다. 4자 이상.",
+        "submit": "등록",
+        "submitting": "등록 중...",
+        "cancel": "취소"
+      },
+      "errors": {
+        "required": "필수 항목입니다.",
+        "tooLong": "너무 깁니다.",
+        "passwordShort": "비밀번호를 4자 이상 입력해 주세요.",
+        "server": "등록하지 못했습니다. 잠시 후 다시 시도해 주세요."
+      }
+    },
+    "widget": {
+      "open": "상담 열기",
+      "close": "상담 닫기",
+      "title": "무엇을 도와드릴까요?",
+      "tabFaq": "FAQ 찾기",
+      "tabInquiry": "문의 남기기",
+      "search": "FAQ 검색",
+      "searchPlaceholder": "궁금한 내용을 입력하세요",
+      "noResult": "찾는 내용이 없나요? 문의를 남겨 주세요.",
+      "allFaq": "FAQ 전체 보기",
+      "name": "이름",
+      "contact": "연락처",
+      "contactHint": "이메일 또는 메신저 ID",
+      "message": "문의 내용",
+      "send": "문의 보내기",
+      "sending": "보내는 중...",
+      "sent": "문의가 접수되었습니다. 순서대로 연락드릴게요.",
+      "another": "문의 하나 더 남기기",
+      "error": "모든 항목을 입력했는지 확인해 주세요."
+    }
+  },
+  "footer": {
+    "tagline": "외국인을 위한 가전 순환 렌탈",
+    "company": "회사 정보",
+    "companyPlaceholder": "상호 · 대표자 · 사업자등록번호 · 주소 · 연락처 (준비 중)",
+    "links": "바로가기",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침",
+    "copyright": "© {year} bilim. All rights reserved."
+  },
+  "legal": {
+    "termsTitle": "이용약관",
+    "privacyTitle": "개인정보처리방침"
+  }
+}

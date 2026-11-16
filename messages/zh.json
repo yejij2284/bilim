@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "title": "bilim | 面向在韩外国人的家电租赁",
+    "description": "面向在韩外国人的循环家电租赁。不用买,租就好。"
+  },
+  "common": {
+    "brand": "bilim",
+    "skipToContent": "跳到正文",
+    "perMonth": "/ 月",
+    "won": "韩元",
+    "comingSoon": "页面准备中",
+    "comingSoonBody": "敬请期待。本页面将在下一阶段完成。",
+    "backHome": "返回首页",
+    "placeholderNotice": "内容准备中。"
+  },
+  "nav": {
+    "about": "服务介绍",
+    "rent": "租赁",
+    "sell": "出售",
+    "support": "客服中心",
+    "my": "我的申请",
+    "apply": "立即申请",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "main": "主菜单",
+    "language": "语言"
+  },
+  "localeNames": {
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "面向外国人的家电租赁",
+      "title": "Don't buy. Just bilim.",
+      "body": "在韩国生活期间需要的家电,不用买,租就好。离开时,bilim 回收您用过的家电。",
+      "rent": "租家电",
+      "sell": "卖家电"
+    },
+    "steps": {
+      "eyebrow": "使用流程",
+      "title": "让家电循环起来的三个步骤",
+      "items": {
+        "source": {
+          "title": "获取家电",
+          "body": "我们向厂商采购新品,并向离境人士收购二手家电,免费上门回收。"
+        },
+        "refurbish": {
+          "title": "清洗·检测·评级",
+          "body": "专业维修商清洗、检测每台家电,并评定品质等级。"
+        },
+        "rent": {
+          "title": "租赁",
+          "body": "按等级收取月租,送货上门并安装。"
+        }
+      }
+    },
+    "benefits": {
+      "eyebrow": "为什么选 bilim",
+      "title": "轻松开始韩国生活",
+      "items": {
+        "subscription": {
+          "title": "按月订阅,无需大笔支出",
+          "body": "不必花大钱购买,用多久付多久。"
+        },
+        "pickup": {
+          "title": "免费上门回收",
+          "body": "无论是出售家电还是租期结束,bilim 都会上门取货。"
+        },
+        "multilingual": {
+          "title": "多语言咨询",
+          "body": "支持韩语、英语、中文咨询,用您方便的聊天工具联系。"
+        }
+      }
+    },
+    "packages": {
+      "eyebrow": "套餐租赁",
+      "title": "租得越多,越划算",
+      "body": "把常常一起租的家电组合在一起。",
+      "cta": "查看套餐"
+    },
+    "ad": {
+      "label": "广告",
+      "title": "广告合作",
+      "body": "想向在韩外国人推广您的服务?可以在此位置投放广告。"
+    },
+    "closing": {
+      "title": "告诉我们您需要什么家电",
+      "body": "提交申请后,我们会按顺序与您联系。",
+      "cta": "申请咨询"
+    }
+  },
+  "categories": {
+    "fridge": "冰箱",
+    "washer": "洗衣机",
+    "microwave": "微波炉",
+    "aircon": "空调",
+    "tv": "电视",
+    "vacuum": "吸尘器",
+    "ricecooker": "电饭煲"
+  },
+  "grades": {
+    "label": "等级",
+    "badgeHint": "查看 {grade} 等级说明",
+    "badge": "{name}级",
+    "tableTitle": "等级标准表",
+    "colGrade": "等级",
+    "colMeaning": "含义",
+    "colPrice": "租金",
+    "NEW": { "name": "全新", "meaning": "全新产品", "price": "最高" },
+    "A": { "name": "A", "meaning": "几乎全新,基本无使用痕迹", "price": "较高" },
+    "B": { "name": "B", "meaning": "轻微使用痕迹,功能完好", "price": "中等" },
+    "C": { "name": "C", "meaning": "外观有使用痕迹,功能正常", "price": "最低" }
+  },
+  "inspection": {
+    "cleaning": "内外清洗与消毒",
+    "power": "电源与用电安全检测",
+    "function": "主要功能运行测试",
+    "safety": "漏水、过热等安全确认",
+    "exterior": "外观检查与等级评定",
+    "parts": "更换耗材与零部件"
+  },
+  "rent": {
+    "title": "家电租赁",
+    "intro": "挑选您需要的家电。月租金因等级而异。",
+    "filters": {
+      "title": "筛选",
+      "category": "种类",
+      "grade": "等级",
+      "price": "月租金",
+      "all": "全部",
+      "priceUnder": "{price} 以下",
+      "reset": "重置筛选"
+    },
+    "count": "共 {count} 件产品",
+    "empty": "没有符合条件的产品,请调整筛选条件。",
+    "minMonths": "最短 {months} 个月",
+    "monthly": "每月 {price}",
+    "photoPlaceholder": "图片准备中",
+    "viewDetail": "查看 {name} 详情",
+    "priceNotice": "所示价格为示例,可能与实际价格不同。"
+  },
+  "product": {
+    "back": "返回租赁列表",
+    "monthlyFee": "月租金",
+    "gradeTitle": "等级说明",
+    "inspectionTitle": "检测记录",
+    "inspectionIntro": "本产品已通过以下全部项目。",
+    "termsTitle": "租赁条件",
+    "deposit": "押金",
+    "installFee": "安装费",
+    "minPeriod": "最短租期",
+    "months": "{months} 个月",
+    "free": "免费",
+    "depositNote": "租赁结束后退还押金。",
+    "apply": "申请此产品",
+    "notFound": "未找到该产品。"
+  },
+  "packages": {
+    "title": "套餐租赁",
+    "slogan": "租得越多,越划算",
+    "intro": "把常常一起租的家电组合起来,比单件租更便宜。",
+    "includes": "包含",
+    "separately": "单件租合计",
+    "packagePrice": "套餐价",
+    "save": "每月节省 {amount}(优惠 {percent}%)",
+    "minMonths": "最短 {months} 个月",
+    "apply": "申请此套餐"
+  },
+  "sell": {
+    "title": "出售家电",
+    "headline": "我们收购,并帮您妥善处理",
+    "intro": "要离开韩国或需要处理家电时,bilim 来收购,并免费上门回收。",
+    "applyCta": "申请收购",
+    "points": {
+      "pickup": { "title": "免费上门回收", "body": "按您希望的日期上门,直接搬走。" },
+      "fast": { "title": "流程简单", "body": "只需发送几张照片和基本信息。" },
+      "circular": { "title": "传给下一位", "body": "经过清洗和检测后,由新来的留学生继续使用。" }
+    },
+    "estimator": {
+      "title": "预估收购价",
+      "body": "选择种类、购买年份和状态,即可查看大致价格范围。",
+      "category": "种类",
+      "year": "购买年份",
+      "condition": "状态",
+      "conditions": {
+        "good": "良好:几乎没有使用痕迹",
+        "fair": "一般:有使用痕迹,功能正常",
+        "poor": "较差:划痕较多或部分功能异常"
+      },
+      "result": "预估收购价",
+      "range": "{min} ~ {max}",
+      "notBuyable": "此条件可能难以收购。我们仍可为您咨询是否能免费回收。",
+      "disclaimer": "此金额按示例公式计算,仅供参考。实际收购价在检测后确定。",
+      "applyWith": "按此条件申请收购"
+    }
+  },
+  "about": {
+    "title": "服务介绍",
+    "intro": "bilim 是面向在韩外国人的循环家电租赁平台。离开的人留下的家电,交到新来的人手中。",
+    "cycle": {
+      "title": "bilim 的循环结构",
+      "caption": "家电从供应方经 bilim 到达租赁客户,维修商负责保证品质。",
+      "suppliers": "家电供应商",
+      "suppliersSub": "Samsung · LG · Xiaomi",
+      "leavers": "想处理家电的人",
+      "leaversSub": "离境的外国人",
+      "bilim": "bilim",
+      "bilimSub": "收购 · 评级 · 租赁",
+      "customers": "租赁客户",
+      "customersSub": "新入境的外国留学生",
+      "repair": "维修商",
+      "repairSub": "清洗 · 检测 · 维修",
+      "flowNew": "全新家电",
+      "flowUsed": "二手家电 · 免费回收",
+      "flowRent": "家电租赁 · 安装",
+      "flowRepair": "故障家电 ⇄ 维修完成"
+    },
+    "services": {
+      "title": "bilim 做什么",
+      "pickup": { "title": "回收服务", "body": "无论是出售家电还是租期结束,均免费上门回收,并配合您的离境日程。" },
+      "grade": { "title": "按等级定价", "body": "每台家电都有品质等级,租金随等级而定。可按预算选择。" },
+      "multilingual": { "title": "多语言支持", "body": "网站和咨询均支持韩语、英语和中文。" },
+      "repair": { "title": "维修与检测", "body": "收购的家电由专业维修商清洗、检测和维修。使用中出现故障也请联系我们。" }
+    },
+    "process": {
+      "title": "维修与检测流程"
+    }
+  },
+  "apply": {
+    "title": "申请咨询",
+    "intro": "只需填写六个步骤。提交申请后,我们会按顺序与您联系。",
+    "stepOf": "第 {current} 步,共 {total} 步",
+    "steps": {
+      "1": "服务类型",
+      "2": "选择产品",
+      "3": "地址",
+      "4": "期望日程",
+      "5": "联系方式",
+      "6": "确认"
+    },
+    "next": "下一步",
+    "prev": "上一步",
+    "submit": "提交申请",
+    "submitting": "提交中...",
+    "optional": "选填",
+    "type": {
+      "legend": "您需要哪项服务?",
+      "RENT": "租赁",
+      "RENTDesc": "按月订阅,租用所需家电。",
+      "SELL": "出售",
+      "SELLDesc": "把用过的家电卖给 bilim,免费上门回收。"
+    },
+    "items": {
+      "rentLegend": "请选择想租的产品或套餐,可多选。",
+      "packages": "套餐",
+      "products": "产品",
+      "selected": "已选 {count} 项",
+      "sellLegend": "请选择想出售的家电种类,可多选。",
+      "brandModel": "品牌 / 型号",
+      "brandModelHint": "例如:Samsung RT25。多件请用逗号分隔。",
+      "purchaseYear": "购买年份",
+      "condition": "状态",
+      "photos": "实物照片",
+      "photosHint": "最多 {max} 张,每张不超过 5MB(JPG、PNG、WEBP)",
+      "addPhotos": "选择照片",
+      "uploading": "上传中...",
+      "removePhoto": "删除第 {index} 张照片",
+      "photoAlt": "已上传照片 {index}"
+    },
+    "address": {
+      "search": "搜索邮政编码",
+      "closeSearch": "关闭搜索",
+      "postcode": "邮政编码",
+      "address": "地址",
+      "addressHint": "可使用邮编搜索,也可直接输入。",
+      "detail": "详细地址",
+      "detailHint": "楼栋、房间号等",
+      "buildingType": "建筑类型",
+      "buildingTypes": {
+        "oneroom": "单间(One-room)",
+        "officetel": "商住公寓(Officetel)",
+        "dormitory": "宿舍",
+        "apartment": "公寓",
+        "villa": "别墅 / 住宅",
+        "other": "其他"
+      },
+      "searchFailed": "无法加载邮编搜索,请直接输入地址。"
+    },
+    "schedule": {
+      "dateRent": "期望配送日期",
+      "dateSell": "期望回收日期",
+      "timeSlot": "期望时间段",
+      "timeSlots": {
+        "morning": "上午(9点~12点)",
+        "afternoon": "下午(12点~18点)",
+        "evening": "晚上(18点~21点)"
+      },
+      "rentMonths": "租期",
+      "months": "{months} 个月",
+      "departureDate": "预计离境日期",
+      "notice": "期望日程将在咨询后确定。"
+    },
+    "contact": {
+      "name": "姓名",
+      "phone": "电话号码",
+      "phoneHint": "查询申请时需要使用此号码。",
+      "email": "电子邮箱",
+      "method": "首选联系方式",
+      "methods": {
+        "kakao": "KakaoTalk",
+        "wechat": "微信",
+        "whatsapp": "WhatsApp",
+        "email": "电子邮件"
+      },
+      "contactId": "聊天工具 ID",
+      "contactIdHint": "若选择 KakaoTalk、微信或 WhatsApp,请填写 ID 或号码。",
+      "nationality": "国籍",
+      "language": "使用语言",
+      "languages": {
+        "ko": "韩语",
+        "en": "英语",
+        "zh": "中文",
+        "other": "其他"
+      },
+      "note": "问题或要求"
+    },
+    "review": {
+      "title": "请确认填写内容",
+      "edit": "修改",
+      "none": "无",
+      "photosCount": "{count} 张照片",
+      "consent": "我同意为咨询目的收集和使用我的个人信息。",
+      "consentDetail": "收集项目:姓名、电话号码、电子邮箱、地址、聊天工具 ID、国籍。仅用于咨询和提供服务。",
+      "privacyLink": "查看隐私政策"
+    },
+    "errors": {
+      "required": "此项为必填。",
+      "tooLong": "内容过长。",
+      "selectOne": "请至少选择一项。",
+      "invalidYear": "请输入四位数年份。",
+      "tooManyPhotos": "最多可上传 {max} 张照片。",
+      "invalidPostcode": "请输入五位邮政编码。",
+      "pastDate": "请选择今天或之后的日期。",
+      "invalidPhone": "请检查电话号码。",
+      "invalidEmail": "请检查电子邮箱地址。",
+      "consentRequired": "同意后才能提交申请。",
+      "upload": "照片上传失败,请检查文件格式和大小。",
+      "items": "找不到所选产品,请重新选择。",
+      "server": "申请保存失败,请稍后再试。",
+      "fixStep": "请检查填写内容。"
+    },
+    "done": {
+      "title": "申请已受理",
+      "body": "我们会按顺序与您联系。",
+      "codeLabel": "申请编号",
+      "codeHint": "凭申请编号和电话号码可查看进度和消息。请务必记下申请编号。",
+      "copy": "复制申请编号",
+      "copied": "已复制",
+      "toMy": "查看我的申请",
+      "toHome": "返回首页"
+    }
+  },
+  "status": {
+    "RECEIVED": "已受理",
+    "CONSULTING": "咨询中",
+    "SCHEDULED": "日程已确定",
+    "DELIVERED_RENT": "配送完成",
+    "DELIVERED_SELL": "回收完成",
+    "ACTIVE": "使用中",
+    "SETTLED": "结算完成",
+    "CANCELED": "已取消"
+  },
+  "my": {
+    "title": "我的申请",
+    "lookup": {
+      "intro": "输入申请编号和电话号码,即可查看进度和消息。无需注册。",
+      "code": "申请编号",
+      "codePlaceholder": "BL-R-000000-XXXX",
+      "phone": "电话号码",
+      "phoneHint": "申请时填写的电话号码",
+      "submit": "查询",
+      "submitting": "查询中...",
+      "noApplication": "还没有申请?",
+      "applyLink": "申请咨询"
+    },
+    "errors": {
+      "required": "请输入申请编号和电话号码。",
+      "notFound": "未找到匹配的申请,请检查申请编号和电话号码。"
+    },
+    "summary": {
+      "code": "申请编号",
+      "type": "服务",
+      "items": "申请内容",
+      "schedule": "期望日程",
+      "address": "地址",
+      "appliedAt": "申请日期",
+      "leave": "查询其他申请"
+    },
+    "timeline": {
+      "title": "进度",
+      "current": "当前阶段",
+      "done": "已完成",
+      "upcoming": "待进行",
+      "canceled": "此申请已取消。如有疑问,请发送消息或联系客服中心。"
+    },
+    "messages": {
+      "title": "消息",
+      "intro": "bilim 会按顺序在这里与您联系,您也可以在这里回复。",
+      "empty": "暂无消息。负责人确认后会尽快与您联系。",
+      "newBadge": "新消息",
+      "unread": "{count} 条新消息",
+      "fromBilim": "bilim",
+      "fromMe": "我",
+      "inputLabel": "写回复",
+      "placeholder": "请输入消息",
+      "send": "发送",
+      "sending": "发送中...",
+      "closed": "已取消的申请无法发送消息。",
+      "errors": {
+        "empty": "请输入消息。",
+        "tooLong": "消息最多 1000 字。",
+        "session": "查询已过期,请重新查询。",
+        "closed": "已取消的申请无法发送消息。",
+        "network": "发送失败,请稍后再试。"
+      }
+    }
+  },
+  "faq": {
+    "categories": {
+      "rent": "租赁",
+      "sell": "出售",
+      "payment": "支付",
+      "repair": "维修·售后",
+      "etc": "其他"
+    },
+    "items": {
+      "rent": {
+        "1": { "q": "有最短租期吗?", "a": "各产品和套餐的最短租期不同,可在产品详情页的“租赁条件”中查看。" },
+        "2": { "q": "配送和安装需要多久?", "a": "我们会根据您申请的期望日程,在咨询中确定日期。确定后的日程可在“我的申请”页面查看。" },
+        "3": { "q": "使用期间可以解约或续租吗?", "a": "请通过“我的申请”页面的消息或一对一咨询告诉我们,我们会在咨询中为您说明。" }
+      },
+      "sell": {
+        "1": { "q": "收购哪些家电?", "a": "收购冰箱、洗衣机、微波炉、空调、电视、吸尘器、电饭煲等。年份过久或故障严重的可能难以收购。" },
+        "2": { "q": "回收需要费用吗?", "a": "不需要。我们收购的家电免费上门回收。" },
+        "3": { "q": "收购价如何确定?", "a": "根据种类、购买年份和状态给出预估金额,实际金额在检测后确定。" }
+      },
+      "payment": {
+        "1": { "q": "租金如何支付?", "a": "支付方式会在咨询时为您说明。" },
+        "2": { "q": "押金什么时候退还?", "a": "租赁结束并回收、确认产品后退还。" }
+      },
+      "repair": {
+        "1": { "q": "使用中出现故障怎么办?", "a": "请通过“我的申请”页面的消息或一对一咨询告知故障情况,我们会安排维修商检测。" },
+        "2": { "q": "维修费用由谁承担?", "a": "取决于是否为正常使用中产生的故障,具体标准会在咨询时说明。" }
+      },
+      "etc": {
+        "1": { "q": "可以用哪些语言咨询?", "a": "支持韩语、英语和中文。可选择 KakaoTalk、微信、WhatsApp 或电子邮件中方便的方式。" },
+        "2": { "q": "服务地区有哪些?", "a": "服务地区正在准备中。提交申请后,我们会确认地址并告知是否可以服务。" }
+      }
+    }
+  },
+  "support": {
+    "title": "客服中心",
+    "intro": "请先查看常见问题。如果没有找到答案,请使用问答板或一对一咨询。",
+    "faqTitle": "常见问题",
+    "qnaTitle": "问答板",
+    "qnaIntro": "任何人都可以提问,由 bilim 回答。",
+    "qnaGo": "查看问答板",
+    "inquiryTitle": "一对一咨询",
+    "inquiryIntro": "点击页面右下角的咨询按钮,随时可以留言咨询。",
+    "qna": {
+      "write": "我要提问",
+      "empty": "还没有提问,来提第一个问题吧。",
+      "answered": "已回答",
+      "waiting": "等待回答",
+      "private": "非公开",
+      "privateTitle": "这是非公开帖子",
+      "back": "返回列表",
+      "question": "问题",
+      "answer": "bilim 的回答",
+      "noAnswer": "暂无回答,我们确认后会尽快回复。",
+      "unlockIntro": "输入发帖时设置的密码即可查看内容。",
+      "password": "密码",
+      "unlock": "确认",
+      "checking": "确认中...",
+      "wrongPassword": "密码不正确。",
+      "form": {
+        "title": "我要提问",
+        "name": "姓名(昵称)",
+        "subject": "标题",
+        "body": "内容",
+        "visibility": "是否公开",
+        "public": "公开",
+        "publicDesc": "所有人可见,请勿填写个人信息。",
+        "private": "非公开",
+        "privateDesc": "只有知道密码的人可以查看。",
+        "password": "密码",
+        "passwordHint": "再次查看非公开帖子时需要,至少 4 位。",
+        "submit": "发布",
+        "submitting": "发布中...",
+        "cancel": "取消"
+      },
+      "errors": {
+        "required": "此项为必填。",
+        "tooLong": "内容过长。",
+        "passwordShort": "请输入至少 4 位密码。",
+        "server": "发布失败,请稍后再试。"
+      }
+    },
+    "widget": {
+      "open": "打开咨询",
+      "close": "关闭咨询",
+      "title": "需要什么帮助?",
+      "tabFaq": "查找常见问题",
+      "tabInquiry": "留言咨询",
+      "search": "搜索常见问题",
+      "searchPlaceholder": "请输入想了解的内容",
+      "noResult": "没有找到?请给我们留言。",
+      "allFaq": "查看全部常见问题",
+      "name": "姓名",
+      "contact": "联系方式",
+      "contactHint": "电子邮箱或聊天工具 ID",
+      "message": "咨询内容",
+      "send": "发送咨询",
+      "sending": "发送中...",
+      "sent": "咨询已受理,我们会按顺序与您联系。",
+      "another": "再留一条咨询",
+      "error": "请确认所有项目均已填写。"
+    }
+  },
+  "footer": {
+    "tagline": "面向外国人的循环家电租赁",
+    "company": "公司信息",
+    "companyPlaceholder": "公司名称 · 代表人 · 营业执照号 · 地址 · 联系方式(准备中)",
+    "links": "快速链接",
+    "terms": "使用条款",
+    "privacy": "隐私政策",
+    "copyright": "© {year} bilim. All rights reserved."
+  },
+  "legal": {
+    "termsTitle": "使用条款",
+    "privacyTitle": "隐私政策"
+  }
+}
