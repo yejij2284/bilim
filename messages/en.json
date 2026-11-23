@@ -108,10 +108,26 @@
     "colGrade": "Grade",
     "colMeaning": "Meaning",
     "colPrice": "Rental price",
-    "NEW": { "name": "New", "meaning": "Brand-new product", "price": "Highest" },
-    "A": { "name": "A", "meaning": "Like new, almost no signs of use", "price": "High" },
-    "B": { "name": "B", "meaning": "Light signs of use, works perfectly", "price": "Medium" },
-    "C": { "name": "C", "meaning": "Visible wear outside, works normally", "price": "Lowest" }
+    "NEW": {
+      "name": "New",
+      "meaning": "Brand-new product",
+      "price": "Highest"
+    },
+    "A": {
+      "name": "A",
+      "meaning": "Like new, almost no signs of use",
+      "price": "High"
+    },
+    "B": {
+      "name": "B",
+      "meaning": "Light signs of use, works perfectly",
+      "price": "Medium"
+    },
+    "C": {
+      "name": "C",
+      "meaning": "Visible wear outside, works normally",
+      "price": "Lowest"
+    }
   },
   "inspection": {
     "cleaning": "Inside and outside cleaning and sanitizing",
@@ -174,9 +190,18 @@
     "intro": "Leaving Korea or clearing out appliances? bilim buys them, and pickup is free.",
     "applyCta": "Request a buyback",
     "points": {
-      "pickup": { "title": "Free pickup", "body": "We come to your home on the day you choose and carry it out." },
-      "fast": { "title": "Simple process", "body": "Just send a few photos and basic details." },
-      "circular": { "title": "On to the next person", "body": "After cleaning and inspection, a newly arrived student uses it again." }
+      "pickup": {
+        "title": "Free pickup",
+        "body": "We come to your home on the day you choose and carry it out."
+      },
+      "fast": {
+        "title": "Simple process",
+        "body": "Just send a few photos and basic details."
+      },
+      "circular": {
+        "title": "On to the next person",
+        "body": "After cleaning and inspection, a newly arrived student uses it again."
+      }
     },
     "estimator": {
       "title": "Estimate your buyback price",
@@ -219,10 +244,22 @@
     },
     "services": {
       "title": "What bilim does",
-      "pickup": { "title": "Pickup service", "body": "Pickup is free when you sell to us and when a rental ends. We visit to fit your departure date." },
-      "grade": { "title": "Prices by grade", "body": "Every appliance gets a quality grade, and the rental price follows the grade. Choose what fits your budget." },
-      "multilingual": { "title": "Multilingual support", "body": "The site and our consultations are available in Korean, English and Chinese." },
-      "repair": { "title": "Repair and inspection", "body": "Appliances we buy are cleaned, inspected and repaired by specialists. Report any fault during your rental too." }
+      "pickup": {
+        "title": "Pickup service",
+        "body": "Pickup is free when you sell to us and when a rental ends. We visit to fit your departure date."
+      },
+      "grade": {
+        "title": "Prices by grade",
+        "body": "Every appliance gets a quality grade, and the rental price follows the grade. Choose what fits your budget."
+      },
+      "multilingual": {
+        "title": "Multilingual support",
+        "body": "The site and our consultations are available in Korean, English and Chinese."
+      },
+      "repair": {
+        "title": "Repair and inspection",
+        "body": "Appliances we buy are cleaned, inspected and repaired by specialists. Report any fault during your rental too."
+      }
     },
     "process": {
       "title": "Repair and inspection process"
@@ -437,26 +474,62 @@
     },
     "items": {
       "rent": {
-        "1": { "q": "Is there a minimum rental period?", "a": "The minimum period differs by product and package. You can check it under Rental terms on each product page." },
-        "2": { "q": "How long do delivery and installation take?", "a": "We confirm the date in consultation, based on the schedule you requested. You can see the confirmed date on the My request page." },
-        "3": { "q": "Can I cancel or extend during my rental?", "a": "Tell us through the messages on the My request page or a 1:1 inquiry, and we will guide you in consultation." }
+        "1": {
+          "q": "Is there a minimum rental period?",
+          "a": "The minimum period differs by product and package. You can check it under Rental terms on each product page."
+        },
+        "2": {
+          "q": "How long do delivery and installation take?",
+          "a": "We confirm the date in consultation, based on the schedule you requested. You can see the confirmed date on the My request page."
+        },
+        "3": {
+          "q": "Can I cancel or extend during my rental?",
+          "a": "Tell us through the messages on the My request page or a 1:1 inquiry, and we will guide you in consultation."
+        }
       },
       "sell": {
-        "1": { "q": "Which appliances do you buy?", "a": "We buy refrigerators, washers, microwaves, air conditioners, TVs, vacuums, rice cookers and more. Very old or badly broken items may be hard to buy." },
-        "2": { "q": "Is there a pickup fee?", "a": "No. Pickup is free for appliances we buy." },
-        "3": { "q": "How is the buyback price decided?", "a": "We give an estimate based on type, purchase year and condition. The final amount is set after inspection." }
+        "1": {
+          "q": "Which appliances do you buy?",
+          "a": "We buy refrigerators, washers, microwaves, air conditioners, TVs, vacuums, rice cookers and more. Very old or badly broken items may be hard to buy."
+        },
+        "2": {
+          "q": "Is there a pickup fee?",
+          "a": "No. Pickup is free for appliances we buy."
+        },
+        "3": {
+          "q": "How is the buyback price decided?",
+          "a": "We give an estimate based on type, purchase year and condition. The final amount is set after inspection."
+        }
       },
       "payment": {
-        "1": { "q": "How do I pay the rental fee?", "a": "We explain the payment method during consultation." },
-        "2": { "q": "When do I get my deposit back?", "a": "We return it after the rental ends and we have collected and checked the product." }
+        "1": {
+          "q": "How do I pay the rental fee?",
+          "a": "We explain the payment method during consultation."
+        },
+        "2": {
+          "q": "When do I get my deposit back?",
+          "a": "We return it after the rental ends and we have collected and checked the product."
+        }
       },
       "repair": {
-        "1": { "q": "What if something breaks during my rental?", "a": "Describe the problem through the messages on the My request page or a 1:1 inquiry. We will arrange an inspection by a repair partner." },
-        "2": { "q": "Who pays for repairs?", "a": "It depends on whether the fault happened in normal use. We explain the details in consultation." }
+        "1": {
+          "q": "What if something breaks during my rental?",
+          "a": "Describe the problem through the messages on the My request page or a 1:1 inquiry. We will arrange an inspection by a repair partner."
+        },
+        "2": {
+          "q": "Who pays for repairs?",
+          "a": "It depends on whether the fault happened in normal use. We explain the details in consultation."
+        }
       },
       "etc": {
-        "1": { "q": "Which languages can I use?", "a": "We help in Korean, English and Chinese. Choose KakaoTalk, WeChat, WhatsApp or email, whichever is easiest." },
-        "2": { "q": "Where is the service available?", "a": "The service area is being prepared. When you apply, we check your address and tell you whether we can serve it." }
+        "1": {
+          "q": "Which languages can I use?",
+          "a": "We help in Korean, English and Chinese. Choose KakaoTalk, WeChat, WhatsApp or email, whichever is easiest."
+        },
+        "2": {
+          "q": "Where is the service available?",
+          "a": "The service area is being prepared. When you apply, we check your address and tell you whether we can serve it."
+        }
       }
     }
   },
@@ -541,5 +614,14 @@
   "legal": {
     "termsTitle": "Terms of Service",
     "privacyTitle": "Privacy Policy"
+  },
+  "pwa": {
+    "install": "Install app",
+    "installed": "The app is installed. Look for bilim on your home screen.",
+    "ios": {
+      "step1": "Tap the Share button (a square with an up arrow) at the bottom of Safari.",
+      "step2": "Tap \"Add to Home Screen\" in the list.",
+      "step3": "Tap \"Add\" at the top right. The bilim app appears on your home screen."
+    }
   }
 }

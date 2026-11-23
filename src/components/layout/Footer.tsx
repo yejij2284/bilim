@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/brand/Logo";
+import { InstallApp } from "@/components/pwa/InstallApp";
 
 export async function Footer() {
   const t = await getTranslations();
@@ -11,6 +12,9 @@ export async function Footer() {
         <div>
           <Logo tone="light" />
           <p className="mt-3 text-sm text-white/80">{t("footer.tagline")}</p>
+          <div className="mt-5">
+            <InstallApp tone="light" />
+          </div>
         </div>
 
         <div>

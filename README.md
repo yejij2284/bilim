@@ -99,6 +99,24 @@ Vercel은 파일을 저장하지 못하므로 SQLite 파일 대신 온라인 DB(
 
 배포 후 로컬 개발로 돌아가려면 `.env`의 `DATABASE_URL`을 `file:./dev.db`로 되돌립니다.
 
+## 앱으로 설치하기 (PWA)
+
+배포한 주소(https)에서 휴대폰에 앱처럼 설치할 수 있습니다. 앱 스토어는 거치지 않습니다.
+
+- **안드로이드(크롬·삼성 인터넷)**: 사이트 맨 아래 **앱 설치** 버튼을 누르거나, 브라우저 메뉴의 "앱 설치" / "홈 화면에 추가"를 누릅니다.
+- **아이폰(Safari)**: 맨 아래 **앱 설치** 버튼을 누르면 방법이 나옵니다. 공유 버튼 → "홈 화면에 추가" → "추가".
+- 설치한 앱은 주소창 없이 전체 화면으로 열리고, 인터넷이 끊기면 세 언어로 된 오프라인 안내 화면이 나옵니다.
+
+| 파일 | 하는 일 |
+|---|---|
+| `src/app/manifest.ts` | 앱 이름, 아이콘, 테마 색, 바로가기(대여·팔기·내 신청) |
+| `public/sw.js` | 서비스 워커: 정적 파일 저장, 오프라인 화면. 고치면 맨 위 `VERSION`을 올린다 |
+| `public/offline.html` | 오프라인 안내 화면 |
+| `public/icons/` | 앱 아이콘. `node scripts/make-icons.mjs`로 다시 만든다 |
+| `src/components/pwa/` | 서비스 워커 등록, 앱 설치 버튼 |
+
+서비스 워커는 `npm run build` 후 `npm run start`로 실행할 때만 등록됩니다. 개발 서버(`npm run dev`)에서는 화면이 저장돼 헷갈리지 않도록 등록하지 않습니다.
+
 ## 폴더 구조
 
 ```
@@ -133,7 +151,7 @@ src/proxy.ts         언어 감지와 기억 (Next.js 16의 middleware)
 - 프리미엄 패키지 구성: "스탠다드 + 에어컨/TV"를 에어컨과 TV 둘 다 포함으로 넣어 둠 (`prisma/seed.ts`)
 - 예상 매입가 계산식의 기준가, 감가율, 상태 계수 (`src/lib/buyback.ts`)
 - 실제 제품 사진: 지금은 종류를 보여 주는 참고 사진 (`public/products`, `prisma/seed.ts`)
-- 전자레인지 캐릭터 (`Mascot.tsx`)
+- 전자레인지 캐릭터 (`Mascot.tsx`, 앱 아이콘은 `scripts/make-icons.mjs`)
 - FAQ 답변: 결제 방법, 서비스 지역, 수리비 기준, 해지·연장 규정 (`messages/*.json`)
 - 회사 정보, 이용약관, 개인정보처리방침 내용 (`Footer.tsx`, `/terms`, `/privacy`)
 - 광고 자리: 광고주가 정해지면 배너로 교체 (`AdSlot.tsx`)

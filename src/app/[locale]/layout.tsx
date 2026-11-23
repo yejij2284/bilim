@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_SC } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SupportWidget } from "@/components/support/SupportWidget";
+import { ServiceWorkerRegister } from "@/components/pwa/ServiceWorkerRegister";
 import "../globals.css";
 
 // 중국어 화면에서만 쓰인다. 글자 수가 많아 미리 불러오지 않는다.
@@ -27,8 +28,25 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("title"), description: t("description") };
+  return {
+    title: t("title"),
+    description: t("description"),
+    applicationName: "bilim",
+    // 아이폰 '홈 화면에 추가'용
+    appleWebApp: { capable: true, title: "bilim", statusBarStyle: "default" },
+    icons: {
+      icon: [
+        { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      ],
+      apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180" }],
+    },
+  };
 }
+
+// 휴대폰 상단 상태 표시줄과 설치한 앱의 테마 색
+export const viewport: Viewport = {
+  themeColor: "#123c2f",
+};
 
 export default async function LocaleLayout({
   children,
@@ -64,6 +82,7 @@ export default async function LocaleLayout({
           </main>
           <Footer />
           <SupportWidget />
+          <ServiceWorkerRegister />
         </NextIntlClientProvider>
       </body>
     </html>
